@@ -7,9 +7,9 @@
 require 'spec_helper'
 
 describe 'apache::default' do
-  context 'When all attributes are default, on an CentOS 6.7' do
+  context 'When all attributes are default, on an CentOS 6.9' do
     let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new(platform: 'centos', version: '6.7')
+      runner = ChefSpec::ServerRunner.new(platform: 'centos', version: '6.9')
       runner.converge(described_recipe)
     end
 
